@@ -14,6 +14,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from ultralytics import YOLO
 from templates import *
 from copy import deepcopy
+from collections import Counter
 from openai import OpenAI, BadRequestError
 
 def most_common_element(lst):
