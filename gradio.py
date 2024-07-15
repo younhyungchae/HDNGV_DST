@@ -13,8 +13,8 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from ultralytics import YOLO
 from templates import *
-from utils import *
 from copy import deepcopy
+from openai import OpenAI, BadRequestError
 
 def most_common_element(lst):
     count = Counter(lst)
